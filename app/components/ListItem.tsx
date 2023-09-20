@@ -9,7 +9,7 @@ import Image from "next/image"
 
 export default function ListItem({post} : Props) {
     const {id, title, date} = post
-    const formattedDate = getFormattedDate(date,'dd MMM yyyy')
+    const formattedDate = getFormattedDate(date)
   return (
     <div className="bg-gray-200 hover:shadow-sm p-5 rounded-lg fle flex-col">
             <div className="flex items-center space-x-2">
